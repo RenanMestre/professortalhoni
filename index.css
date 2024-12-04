@@ -22,7 +22,8 @@ body {
 }
 
 .interface .logo img{
-    width: 100%;
+    max-width: 250px;
+    height: 250px;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -163,7 +164,7 @@ section.topo-do-site .flex {
 
 .topo-do-site .text-topo-site h1 span {
     color: rgb(238, 255, 0);
-    font-size: 50px;
+    font-size: 42px;
 }
 
 .topo-do-site .text-topo-site p {
@@ -185,21 +186,41 @@ section.topo-do-site .flex {
     margin: 5px;
 }
 
+.especialidades .interface .flex .especialidades-box .youtube .certificados a{
+    color: white;
+    text-align: center;
+    margin: 0 0 0;
+    text-decoration: none;
+}
+
 .especialidades .interface .flex .especialidades-box .youtube i{
     color: rgb(255, 0, 0);
-
 }
 
 .especialidades .interface .flex .especialidades-box .youtube video{
+    margin: 15px 0px 0;
     height: 100%;
     width: 100%;
-
 }
 
 .especialidades .interface .flex .especialidades-box .certificados p{
     color: white;
     text-align: center;
     margin: 5px;
+}
+
+.especialidades .interface .flex .especialidades-box .youtube .certificados button{
+    background-color: red;
+    font-size: 25px;
+    margin: auto;
+    border-radius: 15px;
+    width: 25%;
+    height: 25%;
+}
+
+.certificados button:hover {
+    box-shadow: 0px 0px 8px white;
+    transform: scale(1.05);
 }
 
 .especialidades .interface .flex .especialidades-box .cursos i{
@@ -452,7 +473,7 @@ footer .line-footer p a {
 }
 
 .logo-footer img {
-    width: 300px;
+    max-width: auto;
     height: 100px;
 }
 
@@ -493,12 +514,8 @@ footer .line-footer p a {
 
     .topo-do-site .img-topo-site img {
         width: 100%;
-    }
-
-    .interface .logo img {
-        align-items: center;
-        justify-content: center;
-        margin: 1500px;
+        height: 100%;
+        margin: 0 0 15px;
     }
 
     section.especialidades {
@@ -541,13 +558,19 @@ footer .line-footer p a {
         text-align: center;
     }
 
+    footer img {
+        height: 100%;
+        width: 35%;
+    }
+
     .topo-do-site .text-topo-site h1 span {
-        font-size: 35px;
+        font-size: 38px;
     }
 
     .interface .logo img{
-        height: 95px;
-        margin: 0 0 0 15%;
+        height: 200px;
+        max-width: auto;
+        margin: 0 25% 1%;
     }
 
     .especialidades .interface .flex .especialidades-box .especialidades-seguranca .certificados  img{
@@ -559,5 +582,11 @@ footer .line-footer p a {
         height: 250%;
         width: 75%;
         margin: 25px 25px 15px;
+    }
+
+    .especialidades .interface .flex .especialidades-box .youtube .certificados button{
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
     }
 }
